@@ -1,0 +1,7 @@
+# Construct 2
+*.bak
+*.uistate
+
+# Windows
+Thumbs.db
+Desktop.ini

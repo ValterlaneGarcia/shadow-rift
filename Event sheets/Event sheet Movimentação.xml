@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Movimentação</name>
+    <events>
+        <include>Event Sheet Mapa</include>
+        <variable comment="Serve para controlar os jogadores" constant="0" name="GAMEPAD_CONECTADOS" sid="959372091822319" static="0" type="number">0</variable>
+        <event-group description="Cria a movimentação do jogador para W,A,S,D. Também permite da movimentação para demais personagens." sid="840048278041661" title="Movimentação Default">
+            <sub-events>
+                <event-group description="Subgrupo dedicado somente a movimentação do jogador 1 no modo 1 jogador" sid="110435552854108" title="Controle Jogador 1">
+                    <sub-events>
+                        <event-block sid="589876282715841">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="896999644725414" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="175711859676031" type="System">
+                                    <param id="0" name="Variable">GAME_MODE</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="601843819250075">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="995067442927867" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="898781353157040" type="hitbox_jogadores">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="159381249800619">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="804784351684067" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="397606789839629" type="System">
+                                    <param id="0" name="Variable">GAME_MODE</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="576132275771970">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="644561448779410" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="579351648138949" type="hitbox_jogadores">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="495851016195644">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="544661094739557" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="581068392356039" type="System">
+                                    <param id="0" name="Variable">GAME_MODE</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="716109721801911">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="599810683486002" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="584499364211092" type="hitbox_jogadores">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="567949464508297">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="823085777815947" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="762927799439114" type="System">
+                                    <param id="0" name="Variable">GAME_MODE</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="647502919133310">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="640563194831103" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="115992540602490" type="hitbox_jogadores">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="321850508199726">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="150874452334111" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="133943839520883">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="480738237978738" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="990071258061082" type="hitbox_jogadores">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="963263356245680">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="666754260391226" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="944781042918227">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="439446000773882" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="175886848811999" type="hitbox_jogadores">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="770154977301086">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="941034467751848" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="971861112976817">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="904044551370289" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="219858971877673" type="hitbox_jogadores">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="609323633754394">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="342079301137953" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="967977121185561">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="592344681968458" type="hitbox_jogadores">
+                                            <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="758677330196328" type="hitbox_jogadores">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Subgrupo dedocado a controle de outros jogadores" sid="385693983993281" title="Controle Multiplayer">
+                    <sub-events>
+                        <event-block sid="403249200684544">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="136746755971784" type="System">
+                                    <param id="0" name="Count">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="164890802352878">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="327933895759895" type="Gamepad">
+                                            <param id="0" name="Gamepad">loopindex</param>
+                                            <param id="1" name="Axis">1</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">-50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="455501061470704" type="System">
+                                            <param id="0" name="Variable">GAME_MODE</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="814219112309149">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="763857418957538" type="hitbox_jogadores">
+                                                    <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="320582105901432" type="hitbox_jogadores">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="764578785958516">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="158976736271650" type="Gamepad">
+                                            <param id="0" name="Gamepad">loopindex</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">-50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="436934863242544" type="System">
+                                            <param id="0" name="Variable">GAME_MODE</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="382986240950977">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="287797888689219" type="hitbox_jogadores">
+                                                    <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="103145339391724" type="hitbox_jogadores">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="740438342457631">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="156757414208243" type="Gamepad">
+                                            <param id="0" name="Gamepad">loopindex</param>
+                                            <param id="1" name="Axis">1</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="915676883038753" type="System">
+                                            <param id="0" name="Variable">GAME_MODE</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="119773562789396">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="180340658687844" type="hitbox_jogadores">
+                                                    <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="748158163165730" type="hitbox_jogadores">
+                                                    <param id="0" name="Control">3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="219084110746534">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="724445059300600" type="Gamepad">
+                                            <param id="0" name="Gamepad">loopindex</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="635502801487048" type="System">
+                                            <param id="0" name="Variable">GAME_MODE</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="757729615475834">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="224828575823410" type="hitbox_jogadores">
+                                                    <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">loopindex</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="370438992913986" type="hitbox_jogadores">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="116343330737623">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="451112280857646" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="973547796896451" type="System">
+                    <param id="0" name="Variable">GAMEPAD_CONECTADOS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521069933102142">
+            <conditions>
+                <condition id="1" name="On gamepad connected" sid="105817262917894" type="Gamepad" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="668058395712010" type="System">
+                    <param id="0" name="Variable">GAMEPAD_CONECTADOS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="166996400566920">
+            <conditions>
+                <condition id="2" name="On gamepad disconnected" sid="620642423205110" type="Gamepad" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="510363874190326" type="System">
+                    <param id="0" name="Variable">GAME_MODE</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="331593938478390">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="437874296707511" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="461454105287666" type="DebugDeControle">
+                    <param id="0" name="Text">GAMEPAD_CONECTADOS</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557426398401401">
+            <conditions>
+                <condition id="0" name="On clicked" sid="990152981071580" type="DebugescolhendoPersonagem" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="880945173436207" type="System">
+                    <param id="0" name="Object to create">hitbox_jogadores</param>
+                    <param id="1" name="Layer">&quot;Entities&quot;</param>
+                    <param id="2" name="X">715</param>
+                    <param id="3" name="Y">616</param>
+                </action>
+                <action id="-11" name="Add to" sid="824840637951852" type="hitbox_jogadores">
+                    <param id="0" name="Instance variable">CONTROL_GAMEPAD</param>
+                    <param id="1" name="Value">0+JOGADORES_CRIADOS</param>
+                </action>
+                <action id="-10" name="Add to" sid="526504700138593" type="System">
+                    <param id="0" name="Variable">JOGADORES_CRIADOS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="543369981910323" type="System">
+                    <param id="0" name="Variable">GAMEPAD_CONECTADOS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

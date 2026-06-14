@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Menu</name>
+    <events>
+        <variable comment="Variável responsavel por determinar qual o modo de jogo." constant="0" name="GAME_MODE" sid="875204026711932" static="0" type="number">1</variable>
+    </events>
+</c2eventsheet>
