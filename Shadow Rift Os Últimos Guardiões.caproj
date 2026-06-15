@@ -20,6 +20,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra (ported by sakewp)" id="skwp_tween" version="1.100000024">Tween</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -45,7 +46,7 @@
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">NW.js</prop>
-        <prop name="Sampling">Linear</prop>
+        <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -96,11 +97,67 @@
             <object-folder name="background" />
             <object-folder name="HUB" />
         </object-folder>
+        <object-folder name="Object type menu">
+            <object-type name="escolha" sid="535448775519468">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697840609338222" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.532" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Opçaomenu" sid="569348944854139">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="açao" sid="257033026589272" type="string" />
+                    <instance-variable name="opçaoDeescolha" sid="639969201604132" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Tween" sid="241459018517670">
+                        <behavior id="skwp_tween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115469043915072" speed="5">
+                        <frame duration="1" hotspotX="0.501779" hotspotY="0.504951" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Multiplayer" sid="118047394195570">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363506094178228" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Singleplayer" sid="372175830493276">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899310191355329" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cursor" sid="907234357037875">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="OpçaoSelecionada" sid="955191957717863" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494934287661807" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>
         <layout-folder name="Menu">
             <layout>Menu inicial.xml</layout>
+            <layout>Menu de escolha.xml</layout>
         </layout-folder>
         <layout-folder name="Mapa">
             <layout>Mapa Shadow.xml</layout>
