@@ -4,5 +4,155 @@
     <name>Event sheet Menu</name>
     <events>
         <variable comment="Variável responsavel por determinar qual o modo de jogo." constant="0" name="GAME_MODE" sid="875204026711932" static="0" type="number">1</variable>
+        <event-block sid="196617132258691">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="155189395470064" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="475446490309613">
+                    <conditions>
+                        <condition id="-33" name="Pick by comparison" sid="957334449003123" type="System">
+                            <param id="0" name="Object">Opçaomenu</param>
+                            <param id="1" name="Expression">Opçaomenu.opçaoDeescolha</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">cursor.OpçaoSelecionada</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="151505123456359">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="353787190317929" type="Opçaomenu">
+                                    <param id="0" name="Instance variable">açao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;P1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="923251241760248">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="923542797233128" type="Opçaomenu">
+                                    <param id="0" name="Instance variable">açao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;P2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="777286218115124">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="168716934792822" type="Opçaomenu">
+                                    <param id="0" name="Instance variable">açao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Opçao&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="622531779976012">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="840140793358741" type="Opçaomenu">
+                                    <param id="0" name="Instance variable">açao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;creditos&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="599505894787904">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="620835682467472" type="Opçaomenu">
+                                    <param id="0" name="Instance variable">açao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Exit&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="898650440873647">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="934226828966989" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="335435637605436">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="175912105363877" type="cursor">
+                            <param id="0" name="Instance variable">OpçaoSelecionada</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="908306312419201" type="cursor">
+                            <param id="0" name="Instance variable">OpçaoSelecionada</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="353186298978349">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="580039986371588" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="119192828430595">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="373873784963243" type="cursor">
+                            <param id="0" name="Instance variable">OpçaoSelecionada</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="323940452217056" type="cursor">
+                            <param id="0" name="Instance variable">OpçaoSelecionada</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="829936630180212">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="127655504428725" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="402073926952193">
+                    <conditions>
+                        <condition id="-33" name="Pick by comparison" sid="458297818962433" type="System">
+                            <param id="0" name="Object">Opçaomenu</param>
+                            <param id="1" name="Expression">Opçaomenu.opçaoDeescolha</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">cursor.OpçaoSelecionada</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="367155914440358" type="cursor">
+                            <param id="0" name="X">Opçaomenu.X</param>
+                            <param id="1" name="Y">Opçaomenu.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="249757726002314" title="Escolha " />
     </events>
 </c2eventsheet>
